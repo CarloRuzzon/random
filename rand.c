@@ -6,16 +6,16 @@ int main(){
   int num, i;
   srand ( time(NULL) );
 
-  for(i = 0; i < 6; i++){
+  for(i = 0; i < 5; i++){
     num = 50 + rand() % 6;
     printf("%d\t", num);
   }
-printf("\n");
+  printf("\n");
   for(i = 0; i < 5; i++){
     num = (1 + rand() % 5) * 2;
     printf("%d\t", num);
   }
-printf("\n");
+  printf("\n");
   for(i = 0; i < 5; i++){
     num = (1 + (1 + rand() % 5) * 2);
     printf("%d\t", num);
@@ -25,5 +25,6 @@ printf("\n");
     num = (2 * (1 + (1 + rand() % 5) * 2));
     printf("%d\t", num);
   }
+  printf("\n");
   return 0;
 }
